@@ -1,0 +1,133 @@
+let x = 9;
+
+setTimeout(()=> {
+x = x + 1;
+console.log(x)
+}, 0);
+
+setImmediate(()=> {
+x += x + 1;
+console.log(x)
+})
+
+x = 21 + 9
+--------------------------------------
+const y = {
+1: 'timothy',
+2: 'tom',
+}
+
+var x = y;
+x.2 = 'tim'
+
+y.img = 'trigger';
+console.log(y);
+console.log(x);
+
+--------------------------------------
+
+var x = [] -- type of
+
+--------------------------------------
+
+var a = 5, b = 'Next';
+a ||= b;
+console.log(a);
+
+--------------------------------------
+
+[1,44,5,2].map(i => {
+if(i== 2){
+} else {
+return i;
+}
+})
+
+-------------------------------------
+
+function constructList() {
+    const node1 = {
+        name: 'node-1',
+        next: null
+    };
+    const node2 = {
+        name: 'node-2',
+        next: null
+    };
+    const node3 = {
+        name: 'node-3',
+        next: null
+    };
+    const node4 = {
+        name: 'node-4',
+        next: null
+    };
+    node1.next = node2;
+    node2.next = node3;
+    node3.next = node4;
+    return node1;
+}
+const HEAD = constructList();
+
+function traverse(n) {
+    console.log(n.name);
+    if (n.next) {
+        traverse(n.next);
+    }
+}
+
+function deleteNode(root, name) {
+    / Your code goes here / }
+deleteNode(HEAD, 'node-2');
+traverse(HEAD);
+
+---------------------------------------------
+
+console.log("1");
+setTimeout(() => {
+	console.log("2")
+	},0);
+setImmediate(() => {
+	console.log("3");
+	}
+);
+
+-------------------------------------
+
+var number = 10;
+var display = function () {
+  
+    console.log(number);
+  var number = 20;
+};
+display();
+
+---------------------------------------
+
+let arr1 = [2,4,5,8];
+let arr2 = [1,3,4,9];
+
+intersecting elements
+
+------------------------------------
+
+
+
+hoisting
+closure
+ES 6, 7, 8, 9 2features
+callback
+
+react
+---------
+virtual dom DIffing
+props drilling
+lazy loading
+routing
+redux
+redux middleware
+redux hooks
+use memo vs memo
+lifecycle method in hooks
+
+
